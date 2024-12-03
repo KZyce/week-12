@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Teachable Machine</title>
+    <!-- base href="https://teachablemachine.withgoogle.com/" -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <link rel="stylesheet" href="Teachable%20Machine_files/style.css">
+    <script type="text/javascript" async="" src="Teachable%20Machine_files/js"></script><script async="" src="Teachable%20Machine_files/gtm.js"></script><script type="text/javascript" src="Teachable%20Machine_files/api.js"></script>
+    <link rel="shortcut icon" href="https://teachablemachine.withgoogle.com/assets/img/favicon.png">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Teachable Machine">
+    <meta name="description" content="Train a computer to recognize your own images, sounds, &amp; poses.
+        A fast, easy way to create machine learning models for your sites, apps, and more – no expertise or coding required.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://teachablemachine.withgoogle.com/">
+    <meta property="og:title" content="Teachable Machine">
+    <meta property="og:description" content="Train a computer to recognize your own images, sounds, &amp; poses.
+        A fast, easy way to create machine learning models for your sites, apps, and more – no expertise or coding required.">
+    <meta property="og:image" content="https://teachablemachine.withgoogle.com/assets/img/Hero_image_16x9.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://teachablemachine.withgoogle.com/">
+    <meta property="twitter:title" content="Teachable Machine">
+    <meta property="twitter:description" content="Train a computer to recognize your own images, sounds, &amp; poses.
+        A fast, easy way to create machine learning models for your sites, apps, and more – no expertise or coding required.">
+    <meta property="twitter:image" content="https://teachablemachine.withgoogle.com/assets/img/Hero_image_16x9.jpg">
+    <style>
+      body,
+      html {
+        height: 100%;
+      }
+
+      tm-classifier-drawer .error-message {
+        font-weight: bold;
+        color: #e05534;
+      }
+    </style>
+
+    <script>
+      window.dataLayer = window.dataLayer || []
+
+      function getRedactedPathname() {
+        let p = window.location.pathname
+        p = p.replace(/(?<=\/models\/)(\w+)(\/.+)?/gi, '[redacted_id]$2')
+        p = p.replace(
+          /(\/train\/\w+\/)(\w+)(\/.+)?/gi,
+          '$1[redacted_drive_id]$3'
+        )
+        p = p.replace(/(\/drive.+)(\"\w+\")(.+)/gi, '$1[redacted_drive_id]$3')
+        p = p.replace(/(\/train.+id=)(\w+)(&.+)/gi, '$1[redacted_drive_id]$3')
+        return p
+      }
+
+      window.dataLayer.push({
+        page_path: getRedactedPathname(),
+        page_referrer: document.referrer.split('?')[0],
+      })
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-PJ46M7W')
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Cookie Consent CSS -->
+    <link href="Teachable%20Machine_files/cookienotificationbar.min.css" rel="stylesheet">
+  </head>
+
+  <body><!----><tm-model-preview-app></tm-model-preview-app><!---->
+
+</body></html>
